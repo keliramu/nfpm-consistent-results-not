@@ -8,6 +8,6 @@ echo "Build DEB into: $1"
 echo "Create dir: $1..."
 mkdir -p $1
 echo "Create DEB package..."
-nfpm pkg --packager deb --target $1
+/usr/bin/nfpm pkg --packager deb --target $1
 echo "Done."
 
